@@ -2,7 +2,7 @@ import java.util.Date;
 
 public class main {
     public static void main(String[] args) {
-
+        Produit produit0=new Produit();
         Produit produit1= new Produit(1021, "Lait "," Delice");
         Produit produit2= new Produit(2510, "Yaourt "," Vitalait");
         Produit produit3= new Produit (3250, "Tomate "," Sicam",1.200);
@@ -10,7 +10,7 @@ public class main {
         produit1.prix= 700;
         produit2.prix= 550;
 
-
+        produit0.afficher();
          produit1.afficher();
         produit2.afficher();
         produit3.afficher();
