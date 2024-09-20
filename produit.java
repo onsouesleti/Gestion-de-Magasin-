@@ -6,7 +6,7 @@ class Produit {
      double prix;
      Date dateexp;
 
-
+     Produit(){}
     Produit(int id, String libelle, String marque, double prix) {
         this.id = id;
         this.libelle = libelle;
