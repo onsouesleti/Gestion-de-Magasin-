@@ -16,7 +16,19 @@ public class Main {
         Mg.ajouterProduit(produit2);
         Mg.ajouterProduit(produit3);
 
+        Magasin aziza = new Magasin(9001, "MG");
+       aziza.ajouterProduit(produit1);
+        aziza.ajouterProduit(produit2);
+     
+
         System.out.println(Mg.toString());
         System.out.println("Total produits dans tous les magasins: " + Magasin.getTotalProduits());
+        System.out.println("Produit 1 et Produit 2 sont identiques ? " + produit1.comparer(produit2));
+        System.out.println("Produit est-il existant ? " + Mg.chercherProduit(produit2));
+        Mg.ajouterProduit(produit1);
+
+        Mg.supprimerProduit(produit1);
+        Mg.supprimerProduit(produit3);
+        Magasin.comparerMagasins( Mg,aziza);
     }
 }

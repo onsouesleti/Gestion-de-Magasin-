@@ -1,7 +1,7 @@
 import java.util.Date;
 
 public class Produit {
-    private int id;
+    private Integer id;
     private String nom;
     private String marque;
     private float prix;
@@ -60,6 +60,13 @@ public class Produit {
                 '}');
     }
 
+    public boolean comparer(Produit autreProduit) {
+        return this.id.equals(autreProduit.getId())
+                && this.marque.equals(autreProduit.getMarque())
+                && this.prix == autreProduit.getPrix();
+    }
+
+
     @Override
     public String toString() {
         return "tn.tuniprob.gestionmagasin.Produit{" +
@@ -70,4 +77,6 @@ public class Produit {
                 ", dateexp=" + dateexp +
                 '}';
     }
+
+
 }
